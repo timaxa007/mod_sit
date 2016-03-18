@@ -18,7 +18,7 @@ public class EntitySit extends Entity {
 		будет рендриться белый */
 		setSize(0F, 0F);
 		/*Не знаю точно зачем это нужно, но я написал.
-		Знаю что оно используеться для трекера Entity и ещё какого-то пакета*/
+		Знаю что оно используется для трекера Entity и ещё какого-то пакета*/
 		myEntitySize = Entity.EnumEntitySize.SIZE_1;
 	}
 
@@ -26,9 +26,9 @@ public class EntitySit extends Entity {
 	public void onEntityUpdate() {
 		super.onEntityUpdate();
 		if (riddenByEntity == null) {//Если не кто не оседал этот Entity
-			setDead();//... то этот Entity умерает.
-			/* Это надо если игрок/моб сощёл/выпал с этого Entity, 
-			или иначе этот Entity остаёться жить и захламлять своим прибытием в мире.
+			setDead();//... то этот Entity умирает.
+			/* Это надо если игрок/моб сошёл/выпал с этого Entity, 
+			или иначе этот Entity остаётся жить и захламлять своим прибытием в мире.
 			Так как его повторно не оседлать. */
 		}
 	}
